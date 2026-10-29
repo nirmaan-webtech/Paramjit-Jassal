@@ -1623,7 +1623,7 @@
   .hero, .hero-content, .hero-inner, .hero-grid, .about-grid, .contact-grid, .enquiry-grid { grid-template-columns: minmax(0, 1fr) !important; }
   .hero { min-height: auto; padding-block: 52px 42px; }
   .hero-content, .hero-inner { gap: 28px; }
-  .hero img, .hero-image img { width: 100%; height: auto; max-height: 360px; object-fit: cover; }
+  .hero img, .hero-image img { width: 100%; height: 100%; max-height: 360px; object-fit: cover; }
   .services-grid, .service-grid, .cards-grid, .features-grid, .process-grid, .why-grid, .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 14px; }
   .service-card, .feature-card, .process-card, .why-card { min-width: 0; padding: 18px; }
   .about-image img, .about img { max-width: 100%; height: auto; object-fit: cover; }
@@ -1636,8 +1636,7 @@
 @media (max-width: 420px) {
   .services-grid, .service-grid, .cards-grid, .features-grid, .process-grid, .why-grid, .stats-grid { grid-template-columns: minmax(0, 1fr) !important; }
   .service-card, .feature-card, .process-card, .why-card { padding: 18px; }
-  .hero { padding-block: 42px 32px; }
-  .hero img, .hero-image img { max-height: 290px; }
+  .hero { padding-block: 30px 32px; }
   .flight-panel, .lic-panel, .enquiry-panel, .contact-panel { padding: 18px; }
   .btn, a.button, button { max-width: 100%; white-space: normal; }
 }
@@ -1776,7 +1775,7 @@
   nav a { min-height: 44px; display: flex; align-items: center; border-radius: 8px; }
   .hero { min-height: 0; border-radius: 0 0 22px 22px; isolation: isolate; }
   .hero-art { height: 100%; inset: 0; object-fit: cover; object-position: 66% center; opacity: .48; }
-  .hero:after { z-index: 0; background: linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.94) 46%, rgba(239,247,255,.78) 100%); }
+  .hero:after { z-index: 0; background: inear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.55) 46%, rgba(239, 247, 255, 0.59) 100%); }
   .hero-inner { min-height: 0; align-items: stretch; }
   .hero-copy { position: relative; z-index: 1; width: 100%; max-width: 100%; padding: 24px 2px 20px; }
   .hero h1 { max-width: 430px; font-size: clamp(30px, 8vw, 39px); line-height: 1.04; margin: 11px 0 10px; text-wrap: balance; }
@@ -1854,9 +1853,9 @@
   .hero h1 { font-size: clamp(28px,8vw,33px); }
   .hero-ctas .cta { flex: 0 1 auto; }
   .proof-item { padding: 0 2px; gap: 4px; }
-  .proof-ico { flex-basis: 23px; width: 23px; height: 23px; font-size: 11px; }
-  .proof strong { font-size: 8px; }
-  .proof small { font-size: 7px; }
+  .proof-ico { flex-basis: 30px; width : 30px; height: 30px; font-size: 16px; }
+  .proof strong { font-size: 10px; }
+  .proof small { font-size: 8.3px; }
   .service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 7px; }
   .service { grid-template-columns: 28px minmax(0,1fr) 15px; min-height: 82px; gap: 6px; padding: 9px 7px; }
   .service-icon { width: 28px; height: 28px; }
