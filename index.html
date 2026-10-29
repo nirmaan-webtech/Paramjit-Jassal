@@ -1606,6 +1606,48 @@
 	padding: 80px 0;
 }
     </style>
+
+<style id="mobile-responsive-polish">
+/* Responsive mobile layout and accessibility refinements */
+@media (max-width: 700px) {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { overflow-x: hidden; }
+  img, video, iframe { max-width: 100%; }
+  section { scroll-margin-top: 76px; }
+  h1 { font-size: clamp(2rem, 8.5vw, 3.25rem); line-height: 1.08; letter-spacing: -.035em; overflow-wrap: anywhere; }
+  h2 { font-size: clamp(1.65rem, 6vw, 2.35rem); line-height: 1.15; letter-spacing: -.025em; }
+  p { line-height: 1.7; }
+  button, .btn, a.button, input[type="submit"] { min-height: 44px; }
+  input, select, textarea { max-width: 100%; font-size: 16px; }
+  .hero, .hero-content, .hero-inner, .hero-grid, .about-grid, .contact-grid, .enquiry-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  .hero { min-height: auto; padding-block: 52px 42px; }
+  .hero-content, .hero-inner { gap: 28px; }
+  .hero img, .hero-image img { width: 100%; height: auto; max-height: 360px; object-fit: cover; }
+  .services-grid, .service-grid, .cards-grid, .features-grid, .process-grid, .why-grid, .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 14px; }
+  .service-card, .feature-card, .process-card, .why-card { min-width: 0; padding: 18px; }
+  .about-image img, .about img { max-width: 100%; height: auto; object-fit: cover; }
+  .flight-panel, .lic-panel, .enquiry-panel, .contact-panel { padding: 22px; }
+  .contact-form, form { min-width: 0; }
+  .nav-links, nav ul { gap: 14px; }
+  .nav-links a, nav a { padding-block: 10px; }
+  footer .footer-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 22px; }
+}
+@media (max-width: 420px) {
+  .services-grid, .service-grid, .cards-grid, .features-grid, .process-grid, .why-grid, .stats-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  .service-card, .feature-card, .process-card, .why-card { padding: 18px; }
+  .hero { padding-block: 42px 32px; }
+  .hero img, .hero-image img { max-height: 290px; }
+  .flight-panel, .lic-panel, .enquiry-panel, .contact-panel { padding: 18px; }
+  .btn, a.button, button { max-width: 100%; white-space: normal; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+:focus-visible { outline: 3px solid #d4a85a; outline-offset: 3px; }
+</style>
+
 </head>
 
 <body>
